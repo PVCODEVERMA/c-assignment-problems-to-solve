@@ -7,7 +7,7 @@ int main()
     char myString[] = "Hello, World!";
 
     int lenght = Strlen(myString);
-    printf("lenght of the string: %\n", lenght);
+    printf("lenght of the string: \n", lenght);
     return 0;
 
 }
