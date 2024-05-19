@@ -9,31 +9,34 @@
 //     temp = x/10;
 //     x = (R*100)+temp;
 //     printf("%d",x);
-  
 //     return 0;
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
+// int main() {
+//     int number, originalNumber, rotatedNumber; 
+//     printf("Enter a three-digit number: ");
+//     scanf("%d", &number);
+//     originalNumber = number;
+//     int digit1 = number / 100;
+//     int digit2 = (number / 10) % 10;
+//     int digit3 = number % 10;
+//     rotatedNumber = digit3 * 100 + digit1 * 10 + digit2;   
+//     printf("Original number: %d\n", originalNumber);
+//     printf("Rotated number: %d\n", rotatedNumber);
+//     return 0;
+// }
 
-int main() {
-    int number, originalNumber, rotatedNumber;
 
-   
-    printf("Enter a three-digit number: ");
-    scanf("%d", &number);
+#include<stdio.h>
+int main()
+{
+    int X;
+    printf("Enter 3 digit noumber\n");
+    scanf("%d",&X);
 
- 
-    originalNumber = number;
-
-    int digit1 = number / 100;
-    int digit2 = (number / 10) % 10;
-    int digit3 = number % 10;
-
-    rotatedNumber = digit3 * 100 + digit1 * 10 + digit2;
-
-    
-    printf("Original number: %d\n", originalNumber);
-    printf("Rotated number: %d\n", rotatedNumber);
+    X = ((X%10)*100)+(X/10);
+    printf("x = %d",X);
 
     return 0;
 }
