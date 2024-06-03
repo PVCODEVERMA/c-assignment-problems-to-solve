@@ -4,7 +4,7 @@
 
 int main()
 {
-    int  i= 10;
+    int  i = 10;
 	printf("The First 10 Natural Numbers in Reverse\n");
 
 	for (i = 10; i >= 1; i--)
