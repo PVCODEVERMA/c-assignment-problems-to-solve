@@ -2,9 +2,9 @@
 #include <stdio.h>
 int main()
 {
-    int i,N=2;
+    int i,N=10;
 
-     for(int i = 1; i <= 2 * N; i++) {
+     for(int i = N-1; i <= 2 * N; i--) {
         if(i % 2 != 0) {
             printf("%d \n", i);
         }
