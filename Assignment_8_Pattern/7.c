@@ -6,13 +6,15 @@ int main()
     {
         for (j = 1; j <= 9; j++)
         {
-
-            if (j >= 6 - i && j <= 4 + i)
+            if ((j <= 5 - i) || (j >= 5 + i))
+            {
                 printf("*");
+            }
             else
+            {
                 printf(" ");
+            }
         }
-        printf("\n"); 
-        
+        printf("\n");
     }
 }

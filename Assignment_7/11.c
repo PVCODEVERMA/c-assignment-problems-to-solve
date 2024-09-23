@@ -14,14 +14,14 @@
 
 // int main() {
 //     int num;
-    
+
 //     // Input the number from the user
 //     printf("Enter a number: ");
 //     scanf("%d", &num);
-    
+
 //     // Function to find the first set bit
 //     int result = findFirstSetBit(num);
-    
+
 //     if (result != -1) {
 //         printf("The position of the first 1 in LSB is: %d\n", result);
 //     } else {
@@ -31,20 +31,37 @@
 //     return 0;
 // }
 
+// #include<stdio.h>
+// void add()
+// {
+//     int a,b;
 
-#include<stdio.h>
-void add()
+//     printf("Enter 2 number\n");
+//     scanf("%d %d", &a,&b);
+//     printf("Addition = %d\n\n",a+b);
+
+// }
+
+// int main(){
+//     add();
+//     return 0;
+// }
+
+#include <stdio.h>
+int main()
 {
-    int a,b;
+    int x = 12, count = 0;
 
-    printf("Enter 2 number\n");
-    scanf("%d %d", &a,&b);
-    printf("Addition = %d\n\n",a+b);
+    while (x != 0)
+    {
+        count++;
+        if (x & 1 == 1)
+            break;
+        else
 
-}
-
-int main(){
-    add();
+            x = x >> 1;
+    }
+    printf("First 1  from LSB is at = %d\n" , count );
     return 0;
+    
 }
-
